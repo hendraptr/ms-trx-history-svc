@@ -1,12 +1,6 @@
 server:
   port: 8888
 
-batch:
-  transactionsFilePath: src/main/resources/transactions-heavy.csv
-
-ms-trx-hist-batch:
-  input-file-path: ${INPUT_FILE_PATH:src/main/resources/transactions.csv}
-
 spring:
   datasource:
     url: ${DB_URL:jdbc:postgresql://localhost:5432/postgres?currentSchema=ms-trx-hist-svc}
